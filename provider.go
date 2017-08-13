@@ -54,10 +54,11 @@ func Add(kind string, creator ProviderFactory) error {
 	return nil
 }
 
-func has(kind string) bool {
+func Has(kind string) bool {
 	_, err := get(kind)
 	return err == nil
 }
+
 func get(kind string) (ProviderFactory, error) {
 	for k, v := range factories {
 		if kind == k {

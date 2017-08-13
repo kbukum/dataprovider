@@ -41,6 +41,32 @@ func Test_Get(t *testing.T) {
 	assert.NotNil(t, data, "Got data must be not nil !", err)
 }
 
+type MyProvider struct {
+	opts interface{}
+}
+
+func (provider *MyProvider) Get(input interface{}) ([]byte, string, error) {
+	return []byte(" Content: " + input.(string)), ".txt", nil
+}
+
+func MyProviderFactory(opts ...interface{}) (provider.Provider, error) {
+	return &MyProvider{
+		opts: nil,
+	}, nil
+}
+
 func TestAdd(t *testing.T) {
-	provider.Add("myProvider", )
+	provider.Add("txt", MyProviderFactory)
+	p, err := provider.Create("txt").Build()
+	assert.Nil(t, err, "Couldn't create file provider factory Error : %v", err)
+	assert.NotNil(t, p, "Couldn't create file provider factory !", err)
+	data, ext, err := p.Get("This is string content")
+	assert.Nil(t, err, "Couldn't create file provider factory Error : %v", err)
+	assert.Equal(t, ".txt", ext, "File extension must be '.go' !")
+	assert.NotNil(t, data, "Got data must be not nil !", err)
+}
+
+func TestHas(t *testing.T) {
+	result := provider.Has("file")
+	assert.True(t, result, "Provider is not exist");
 }
