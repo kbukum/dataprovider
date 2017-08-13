@@ -6,6 +6,8 @@ go:
     - 1.6
     - ti
 
+install: make get-deps
+
 script:
   - go test -race -coverprofile=coverage.txt -covermode=atomic
 
