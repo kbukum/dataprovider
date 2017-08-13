@@ -7,6 +7,7 @@
 * added code coverage.
 * added coverage result.
 * added travis install command to get test imports.
+* changed travis configuration.
 
 #### v1.0.0 
 * initial commit
