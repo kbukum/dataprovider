@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"mime"
 	"strings"
-	"github.com/pkg/errors"
 	"path/filepath"
+	"errors"
 )
 
 type HttpProvider struct {

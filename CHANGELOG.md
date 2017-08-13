@@ -9,6 +9,7 @@
 * added travis install command to get test imports.
 * changed travis configuration.
 * added coveralls api token.
+* remove `github.com/pkg/erros` from library.
 
 #### v1.0.0 
 * initial commit

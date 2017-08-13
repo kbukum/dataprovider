@@ -1,8 +1,8 @@
 package provider
 
 import (
-	"github.com/pkg/errors"
 	"fmt"
+	"errors"
 )
 
 type Provider interface {
