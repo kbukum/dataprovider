@@ -5,6 +5,7 @@
 * changed `provider.Has` method as public method.
 * added .travis.yml
 * added code coverage.
+* added coverage result.
 
 #### v1.0.0 
 * initial commit
