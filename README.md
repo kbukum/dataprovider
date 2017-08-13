@@ -1,5 +1,9 @@
 ## Data Provider
-    Get Data as Byte with Data Type from anywhere which providers are defined.
+    
+Get Data as Byte with Data Type from anywhere which providers are defined.
+
+[![Travis-CI](https://travis-ci.org/kbukum/dataprovider.svg?branch=master)](https://travis-ci.org/kbukum/dataprovider.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/kbukum/dataprovider/badge.svg?branch=master)](https://coveralls.io/github/kbukum/dataprovider?branch=master)
 
 #### Motivation
 Always we need to get data from anywhere. In a lot of application or libraries we want to find data by the given environment and options.
