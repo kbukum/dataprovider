@@ -14,7 +14,7 @@ func TestHttpProvider_Get(t *testing.T) {
 	result, contentType, err := p.Get("https://www.google.com.tr/logos/2017/hiphop/cta_bg.jpg")
 	assert.Nil(t, err, "Error is not null")
 	assert.Equal(t, ".jpg", contentType, "ContentType must be .jpg")
-	assert.NotNil(t, result, "Contet is nil ")
+	assert.NotNil(t, result, "Content is nil ")
 
 	// get file by http provider
 	result, contentType, err = p.Get(&provider.HttpInput{
@@ -24,6 +24,6 @@ func TestHttpProvider_Get(t *testing.T) {
 	})
 	assert.Nil(t, err, "Error is not null")
 	assert.Equal(t, ".jpg", contentType, "ContentType must be .jpg")
-	assert.NotNil(t, result, "Contet is nil ")
+	assert.NotNil(t, result, "Content is nil ")
 
 }

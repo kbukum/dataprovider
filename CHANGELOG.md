@@ -10,6 +10,7 @@
 * changed travis configuration.
 * added coveralls api token.
 * remove `github.com/pkg/erros` from library.
+* changed go version in .travis.yml
 
 #### v1.0.0 
 * initial commit
