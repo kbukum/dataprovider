@@ -13,4 +13,4 @@ install:
 
 script:
   - go test -v -race -covermode=count -coverprofile=coverage.out .
-  - goveralls -coverprofile=coverage.out -service travis-ci -repotoken $COVERALLS_TOKEN
+  - goveralls -coverprofile=coverage.out -service travis-ci -repotoken iDWjf6li4aCqWRPhe5DnadwQIU5HNTnAN

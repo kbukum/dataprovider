@@ -8,6 +8,7 @@
 * added coverage result.
 * added travis install command to get test imports.
 * changed travis configuration.
+* added coveralls api token.
 
 #### v1.0.0 
 * initial commit
