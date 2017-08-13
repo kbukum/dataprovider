@@ -35,7 +35,7 @@ func Test_Get(t *testing.T) {
 	p, err := provider.Create("file").Build()
 	assert.Nil(t, err, "Couldn't create file provider factory Error : %v", err)
 	assert.NotNil(t, p, "Couldn't create file provider factory !", err)
-	data, ext, err := p.Get("/Users/kamilbukum/go/src/github.com/kbukum/dataprovider/file.go")
+	data, ext, err := p.Get("./file.go")
 	assert.Nil(t, err, "Couldn't create file provider factory Error : %v", err)
 	assert.Equal(t, ".go", ext, "File extension must be '.go' !")
 	assert.NotNil(t, data, "Got data must be not nil !", err)

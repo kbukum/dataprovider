@@ -11,6 +11,7 @@
 * added coveralls api token.
 * remove `github.com/pkg/erros` from library.
 * changed go version in .travis.yml
+* fixed absolute path problem in `provider_test.go`
 
 #### v1.0.0 
 * initial commit
